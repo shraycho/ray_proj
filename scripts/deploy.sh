@@ -5,8 +5,8 @@ PROJECT_NAME=ray_proj
 
 echo ">Build 파일 복사"
 
-cp $REPOSITORY/$PROJECT_NAME/build/libs/*.jar $REPOSITORY/
-
+#cp $REPOSITORY/$PROJECT_NAME/build/libs/*.jar $REPOSITORY/
+cp $REPOSITORY/zip/*.jar $REPOSITORY/
 echo ">현재 구동중인 애플리케이션 pid 확인"
 
 CURRENT_PID=$(pgrep -f ${PROJECT_NAME}.*.jar)
